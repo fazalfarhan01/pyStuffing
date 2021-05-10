@@ -1,0 +1,7 @@
+*__pycache__*
+env
+.vscode
+src
+dist
+build
+pyStuffing.egg-info
