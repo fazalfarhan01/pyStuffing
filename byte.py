@@ -1,15 +1,15 @@
-from pyStuffing.ByteStuffing import ByteStuffing
-from pyStuffing.cls import cls
+from pyStuffing import ByteStuffing
+from pyStuffing import clear
 
 
-if __name__ == "__main__":
-    # stuff = ByteStuffing(list("abcdefghijklmnopqrstuvwxyz".upper()))
-    stuff = ByteStuffing()
-    stuff.startStuffing()
-    stuff.startUnStuffing()
+# if __name__ == "__main__":
+stuff = ByteStuffing(list("abcdefghijklmnopqrstuvwxyz".upper()), escape_character="E", flag_character="F")
+# stuff = ByteStuffing()
+stuff.startStuffing()
+stuff.startUnStuffing()
 
-    cls()
-    
-    print("Sequence:  {}".format(stuff.sequence))
-    print("Stuffed:   {}".format(stuff.stuffed))
-    print("Un-stuffed: {}".format(stuff.unStuffed))
+clear()
+
+print("Sequence:  {}".format(stuff.sequence))
+print("Stuffed:   {}".format(stuff.stuffed))
+print("Un-stuffed: {}".format(stuff.unStuffed))

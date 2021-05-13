@@ -18,12 +18,12 @@ def _cleanSequence(sequence):
 
 
 class ByteStuffing(object):
-    def __init__(self, sequence: list = None) -> None:
+    def __init__(self, sequence: list = None, escape_character:str="E", flag_character:str="F") -> None:
         if sequence == None:
             sequence = list(input("Enter the sequence (No Spaces): ").upper())
         self.sequence = _cleanSequence(sequence)
-        self.escape = "E"
-        self.flag = "F"
+        self.escape = escape_character
+        self.flag = flag_character
         self.stuffed = []
         self.unStuffed = []
 
