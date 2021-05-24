@@ -10,6 +10,6 @@ if __name__ == "__main__":
 
     # PRINT SEQUENCES TO SCREEN
     print("Main Sequence:       {}".format(stuff.sequence))
-    print("Stuffed Sequence:    {}".format(stuff.stuffed))
-    print("Un-Stuffed Sequence: {}".format(stuff.unStuffed))
+    # print("Stuffed Sequence:    {}".format(stuff.stuffed))
     print("Stuffed Sequence:    {}".format(stuff.getStuffedColored()))
+    print("Un-Stuffed Sequence: {}".format(stuff.unStuffed))
