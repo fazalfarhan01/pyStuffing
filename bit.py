@@ -1,12 +1,12 @@
-from pyStuffing.BitStuffing import BitStuffing
-from pyStuffing.cls import cls
+from pyStuffing import BitStuffing
+from pyStuffing import clear
 
 if __name__ == "__main__":
     stuff = BitStuffing()
     stuff.startStuffing() # START STUFFING
     stuff.startUnstuffing()
 
-    cls() # CLEAR SCREEN
+    clear() # CLEAR SCREEN
 
     # PRINT SEQUENCES TO SCREEN
     print("Main Sequence:       {}".format(stuff.sequence))

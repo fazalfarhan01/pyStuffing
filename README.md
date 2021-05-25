@@ -6,15 +6,15 @@
 ## 1. Bit Stuffing usage example.
 
 ```PYTHON
-from pyStuffing.BitStuffing import BitStuffing
-from pyStuffing.cls import cls
+from pyStuffing import BitStuffing
+from pyStuffing import clear
 
 if __name__ == "__main__":
     stuff = BitStuffing()
     stuff.startStuffing() # START STUFFING
     stuff.startUnstuffing()
 
-    cls() # CLEAR SCREEN
+    clear() # CLEAR SCREEN
 
     # PRINT SEQUENCES TO SCREEN
     print("Main Sequence:       {}".format(stuff.sequence))
@@ -39,18 +39,18 @@ if __name__ == "__main__":
 ## 2. Byte Stuffing usage example.
 
 ```PYTHON
-from pyStuffing.ByteStuffing import ByteStuffing
-from pyStuffing.cls import cls
+from pyStuffing import ByteStuffing
+from pyStuffing import clear
 
 
 if __name__ == "__main__":
-    # stuff = ByteStuffing(list("abcdefghijklmnopqrstuvwxyz".upper()))
-    stuff = ByteStuffing()
+    stuff = ByteStuffing(list("abcdefghijklmnopqrstuvwxyz".upper()), escape_character="E", flag_character="F")
+    # stuff = ByteStuffing()
     stuff.startStuffing()
     stuff.startUnStuffing()
 
-    cls()
-    
+    clear()
+
     print("Sequence:  {}".format(stuff.sequence))
     print("Stuffed:   {}".format(stuff.stuffed))
     print("Un-stuffed: {}".format(stuff.unStuffed))
